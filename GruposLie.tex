@@ -4,6 +4,7 @@
 \usepackage[spanish]{babel}  
 \usepackage{indentfirst} %%%%%%%%%%%%%%%%Crear un indent al principio
 \usepackage[latin1]{inputenc}%%%%%%%%%%%%ñ y acentos
+\usepackage{makeidx}
 \usepackage{amstext}%%%%%%%%
 \usepackage{amsfonts}%%%%%%%
 \usepackage{amssymb}%%%%%%%% AMSLaTeX
@@ -97,7 +98,7 @@
 
 
 
-
+\makeindex
 
 %%%%%%%%%%%%%%%%%
 \title{Grupos de Lie}
@@ -5927,7 +5928,16 @@ Demostrar que si
       \end{pro}
       
       
-      
+  \newpage
+
+\printindex
+
+\nocite{*}
+
+\newpage
+
+\bibliographystyle{plain}
+\bibliography{Lie.bib}    
       
       
       
